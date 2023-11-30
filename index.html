@@ -1,0 +1,49 @@
+<!--
+    Web Development Group Project(Group Five(5))
+    Project  : To-Do List Application(Number 4) 
+
+
+    PROJECT PARTICIPANTS
+    
+    1. Ransford Addai - 32524 
+    2. Chibuike Anyiam - 47186  
+    3. Eneanya Julianrita- 46573  
+    4. Ude Daniel Kalu- 40952   
+    5. LLoyd Asiedu - 45419   
+    6. Alloh Nkefor Rodrick - 42960  
+    7. Stanislaus Okechukwu - 47912  
+    8. Athaliah Balasu- 40859 
+    9. Moses Isang- 44636 
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <!-- Input fields for task, category, and due date -->
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <select id="categorySelect">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="date" id="dueDateInput">
+            <!-- Button to add a new task -->
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <!-- Task list container -->
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
